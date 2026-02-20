@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply min-h-screen;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100;
+  }
+
+  section {
+    scroll-margin-top: 88px;
+  }
+}
+
+@layer utilities {
+  .section-snap {
+    scroll-snap-align: start;
+  }
+}
